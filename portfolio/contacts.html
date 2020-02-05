@@ -8,12 +8,12 @@
 	<html lang="en">
 		
 		<head>
-			<title> Contact </title>
+			<title> Contact Hawkin Mogen </title>
 			</head>
 			
 			<body>
 				<header>
-			<h1> Contact Information for Hawkin Mogen </h1>
+			<h1> Contact Hawkin Mogen </h1>
 				</header>
 				
 			
@@ -24,9 +24,63 @@
 			<p> <a href="testimonials.html">Testimonials</a> </p>
 			<hr/>
 			
-			<h2> <strong> Hawkin Mogen </strong> </h2>
+			<h2> <strong> Information Request </strong> </h2>
 				
-				<p> contact info goes here <p>
+				<form action="submit.html" method="POST">
+					<!-- text inputs**************** -->
+					<label for="firstName">First Name:</label> <br/>
+					<input type="text" id="firstName" name="firstName"> <br/>
+					
+					<label for="lastName">Last Name:</label> <br/>
+					<input type="text" id="lastName" name="lastName"> <br/>
+					
+					<label for="phone">Phone Number:</label> <br/>
+					<input type="text" id="phone" name="phone"> <br/>
+					<!-- text inputs******************* -->
+					
+					<!-- drop down************-->
+					<label for="contact">Best time to call:</label> <br/>
+					<select id="contact" name="contact">
+						<option value="default" selected>--Select One--</option>
+						<option value="morning"> Morning (8AM to 12PM Eastern)</option>
+						<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+						<option value="Evening">Evening (5PM to 8PM Eastern)</option>
+					</select>
+					<!--dropdown****************-->
+					
+					<!-- checkboxes***********-->
+					<fieldset>
+						<legend> I am interested in (check all that apply)</legend> <br/>
+						
+						<input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+						<label for="frontEnd">Front End Web Development</label> <br/>
+						
+						<input type="checkbox" id="backEnd" name="interest" value="backEnd">
+						<label for="backEnd">Back End Web Development</label> <br/>
+						
+						<input type ="checkbox" id="database" name="interest" value="database">
+						<label for="database">Database Design</label> <br/>
+					</fieldset>
+					<!-- checkboxes***********-->
+					
+					<!-- radio buttons***********-->
+					<fieldset>
+						<legend> I have filled in the client questionnaire form:</legend> <br/>
+						
+						<input type="radio" id="choice1" name="questionnaire" value="yes">
+						<label for="choice1">Yes</label> <br/>
+						
+						<input type="radio" id="choice2" name="questionnaire" value="no">
+						<label for="choice2"> No</label> <br/>
+					</fieldset>
+					<!--radio buttons************-->
+					
+					<!-- text are and submit button*********-->
+					<label for="info"> Additional Information</label> <br/>
+					<textarea id="info" name="info"></textarea><br/>
+					
+					<input type="submit" name="submit" value="Submit"><input type="reset">
+					<!-- textare and submit button********-->
 					
 					<p> <strong>Click on Hawkin's nose to return to the home page.</strong> </p>
 					<a href="index.html"><img src="images/hawkinpicture.jpg" alt="Click here to return to the homepage"/> </a>
