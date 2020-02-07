@@ -6,6 +6,10 @@ Date last modified:
 body{background-color: #fef9ff;
 	 font-family: arial, helvetica, sans-serif;
 	 color: #0d1f2d;
+	 max-width:900px;
+	 margin: 0 auto;
+	 border-left: 10px double #5b7d87;
+	 border-right: 10px double #5b7d87;
 	 }
 
 header,footer{background-color: #5b7d87;
@@ -20,3 +24,10 @@ nav{border-top: 3px dashed #546a7b;
 	border-bottom: 3px dashed #546a7b;
 	margin-top: 4px;}
 	 
+.clear-float{clear:both;}
+
+article img{float:left;}
+
+.right-content{float:left;}
+
+article{margin-bottom: 16px;}
