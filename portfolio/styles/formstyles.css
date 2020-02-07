@@ -1,0 +1,39 @@
+/* styles for the contact forms */
+
+
+label,fieldset{font-size: 1.1em}
+
+input[type=text]{border: 2px solid #0d1f2d;
+				 width: 50%;
+				 padding: 8px 8px;
+				 margin: 12px 0;
+				 box-sizing:border-box;
+				 font-size: 1.1em;}
+				 
+
+fieldset{background-color: #fef9ff;
+		 width:100%;
+		 padding: 12px 20px;
+		 margin: 12px 0;
+		 box-sizing:border-box;}
+		 
+select, textarea{margin: 12px 0;
+				 font-size:1em;}
+				 
+input[type=submit]:hover {
+    background-color: #5b7d87;
+    color: #fef9ff;
+}
+
+input[type=reset]:hover{background-color:#5b7d87;
+						color: #fef9ff;}
+
+textarea{width:100%;
+		 height:200px;
+		 padding: 12px 20px;
+		 margin: 12px 0;
+		 box-sizing:border-box;
+		 border:2px solid #0d1f2d;
+		 border-radius: 3px;
+		 background-color: #fff;
+		 resize:none;}
