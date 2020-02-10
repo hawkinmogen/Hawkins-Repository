@@ -43,3 +43,13 @@ function countingCharacters3(str, search){
     
     return count;
 }
+
+function addTwoNumbers(firstNumber, secondNumber){
+    var sum=firstNumber+secondNumber;
+        console.log(sum);
+    
+    
+    
+    
+}
+
