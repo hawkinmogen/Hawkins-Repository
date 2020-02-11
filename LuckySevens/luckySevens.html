@@ -9,7 +9,7 @@
    
     <script type="text/JavaScript" src="luckySevens.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">   
         <!-- put external or internal style sheets below-->
         
         <style>
@@ -18,8 +18,24 @@
                 margin: 0 auto;
                 
                }
+               
+              #startingBet{border-width: 5px;
+                            border-color:black;
+                            box-shadow: none;} 
+              
            #startingBetText{padding-top: 50px;
-               }
+                            }
+            
+            #submitButton{margin-top:50px;
+                          padding: 18px 28px;
+                          font-weight:bold;
+                          font-size: 22px; 
+                          line-height: 5px;
+                          border-width: 5px;
+                          -webkit-border-radius: 0px;
+                          -moz-border-radius: 0px;
+                            border-radius: 0px;
+}
 
             
         </style>
@@ -36,11 +52,24 @@
         <h1 class="display-1">Lucky Sevens</h1>
       </div>
       
-      <div class="row" id="startingBetText">
+      <div class="row d-flex justify-content-center" id="startingBetText">
           <h2 class="font-weight-bold">Starting Bet:</h2>
           
-          
+      <form name="gameStart" onsubmit="return validateItems();>
+          <div class="col-3 input-group">
+              <div class="input-group-addon">
+              <i class="fa fa-dollar"></i>
+              </div>
+              <input type="number" min="1" step="any" class="form-control" id="startingBet">
+              </div>
       </div>
+              
+              <div class="row d-flex justify-content-center">
+                  <button type="submit" id="submitButton" class="btn btn-outline-dark">Play</button>
+            </div>
+       </form> 
+          
+      
       
  </div>
         
