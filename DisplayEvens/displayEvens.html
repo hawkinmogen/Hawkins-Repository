@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+   
+   
+    <script type="text/JavaScript" src="displayEvens.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- put external or internal style sheets below-->
+        
+        <style>
+            
+         
+            
+        </style>
+
+
+
+
+</head>
+<body>
+<div class="container">
+    <h1>Sample</h1>
+    <form name="displayEvens" onsubmit="return validateItems();"
+        onreset="resetForm();">
+            
+            <div class="form-group row">
+                <label for="startNum">Starting Number</label>
+                <div class="column">
+                <input type="number" class="form-control" id="startNum">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="endNum">Starting Number</label>
+                <div class="column">
+                <input type="number" class="form-control" id="endNum">
+                </div>
+            </div>
+	
+            <div class="form-group row">
+                <label for="stepNum">Step</label>
+                <div class="column">
+                <input type="number" class="form-control" id="stepNum">
+	            </div>
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-outline-dark">Display Evens</button>
+     </form>
+	
+    <p>Here are the even numbers between <span id="startNum"></span> and <span id="endNum"></span>
+    by <span id="stepNum"></span>'s.
+	
+
+
+</div>
+</body>
+</html>
