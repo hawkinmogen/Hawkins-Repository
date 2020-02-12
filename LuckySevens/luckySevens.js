@@ -41,7 +41,7 @@ function playGame(){
 			console.log("win");
 		}
 	}
-
+	document.getElementById("submitButton").innerText = "Play Again!";
     document.getElementById("start").innerHTML = startingBet;
 	document.getElementById("diceRolls").innerHTML = diceRolls;
 	document.getElementById("maxWinnings").innerHTML = maxWinnings;
