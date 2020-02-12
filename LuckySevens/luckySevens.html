@@ -55,11 +55,11 @@
       <div class="row d-flex justify-content-center" id="startingBetText">
           <h2 class="font-weight-bold">Starting Bet:</h2>
           
-      <form>
-          <div class="col-3 input-group">
-              <div class="input-group-addon">
-              <i class="fa fa-dollar"></i>
-              </div>
+      <form name="gameStart" onsubmit="return validateItems();">
+          <div class="col input-group">
+             <!-- <div class="input-group-addon">
+             <i class="fa fa-dollar"></i> 
+              </div>-->
               <input type="number" min="1" step="any" class="form-control" id="startingBet">
               </div>
       </div>
@@ -69,7 +69,8 @@
             </div>
        </form> 
           
-      
+          
+      <hr id="chart" style="display:none;">
       
  </div>
         
