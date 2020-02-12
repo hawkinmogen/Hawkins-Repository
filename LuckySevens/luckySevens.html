@@ -62,7 +62,8 @@
           <h2 class="font-weight-bold">Starting Bet:</h2>
           
       <!--Starting bet form, input is validated using the validateItems(); function in luckySevens.js -->
-      <form name="gameStart" onsubmit="return validateItems();" onSubmit="return false;">
+      <form name="gameStart" onsubmit="return validateItems();" onsubmit="return false;">
+          
           <div class="col input-group">
               
               <!-- dollar bill icon-->
@@ -89,10 +90,29 @@
           <h1 class="display-1">Results</h1>
        </div>
       
+      <table id="results" class="table table-striped">
+        
+        <tbody>
+            <tr>
+                <td>Starting Bet</td>
+                <td><span id="startingBet"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="diceRolls"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="maxWinnings"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Hightest Amount Won</td>
+                <td><span id="rollsAtMax"></span></td>
+            </tr>
+        </tbody>
+    </table>
       
-      
-      
-      
+    
 </div>
         </div>
       
