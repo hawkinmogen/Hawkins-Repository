@@ -42,7 +42,7 @@ function playGame(){
 		}
 	}
 
-    document.getElementById("startingBet").innerHTML = startingBet;
+    document.getElementById("start").innerHTML = startingBet;
 	document.getElementById("diceRolls").innerHTML = diceRolls;
 	document.getElementById("maxWinnings").innerHTML = maxWinnings;
 	document.getElementById("rollsAtMax").innerHTML = rollsAtMax;
