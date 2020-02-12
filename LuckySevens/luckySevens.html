@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+    Author: Hawkin Mogen
+    Created: 2/11/2020
+    Last Modified:
+ -->
+
 <html>
 <head>
    
@@ -34,9 +40,9 @@
                           border-width: 5px;
                           -webkit-border-radius: 0px;
                           -moz-border-radius: 0px;
-                            border-radius: 0px;
-}
-
+                            border-radius: 0px;}
+                            
+     
             
         </style>
 
@@ -55,28 +61,41 @@
       <div class="row d-flex justify-content-center" id="startingBetText">
           <h2 class="font-weight-bold">Starting Bet:</h2>
           
-      <form name="gameStart" onsubmit="return validateItems();">
+      <!--Starting bet form, input is validated using the validateItems(); function in luckySevens.js -->
+      <form name="gameStart" onsubmit="return validateItems();" onSubmit="return false;">
           <div class="col input-group">
-             <!-- <div class="input-group-addon">
+              
+              <!-- dollar bill icon-->
+              <div class="input-group-addon">
              <i class="fa fa-dollar"></i> 
-              </div>-->
+              </div>
+              
               <input type="number" min="1" step="any" class="form-control" id="startingBet">
               </div>
-      </div>
+          </div>
               
               <div class="row d-flex justify-content-center">
                   <button type="submit" id="submitButton" class="btn btn-outline-dark">Play</button>
             </div>
        </form> 
           
-          
-      <hr id="chart" style="display:none;">
+      <!-- Results Section, the following appears when a valid bet is submitted-->
       
  </div>
-        
-
-
-
+      <div class="container">  
+<div id="gameInfo" style="display:none">    
+      <hr style="border: 5px solid black;">
+      <div style="background:transparent" class="jumbotron jumbotron-fluid text-center">
+          <h1 class="display-1">Results</h1>
+       </div>
+      
+      
+      
+      
+      
+</div>
+        </div>
+      
 
 
 
