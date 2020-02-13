@@ -1,0 +1,27 @@
+nav{
+	
+	border-top: medium solid #0d1f2d;
+	border-bottom: medium solid #0d1f2d;
+	
+}
+
+.clear-float{clear:both;}
+
+nav a{float:left;
+		padding-left:12px;
+		padding-right:12px;
+		text-decoration: underline;
+		margin-top:15px;}
+
+footer{
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+		margin-bottom:.5px;
+		border-top: medium solid #0d1f2d;
+	border-bottom: medium solid #0d1f2d;
+		}
+
+footer p{ max-width:400px;
+		margin-left:auto;
+        margin-right:auto;}
