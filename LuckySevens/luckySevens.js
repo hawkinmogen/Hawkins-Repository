@@ -1,11 +1,11 @@
 /*
 	Author: Hawkin Mogen
 	Created: 2/11/2020
-	Last Modified:
+	Last Modified:2/12/2020
 	*Javascript for luckySevens.html*
 	*/
 	
-
+//Dice roll function
 function rollDice(){
 	return Math.floor(Math.random()*6)+1;
 }
@@ -36,7 +36,12 @@ function playGame(){
 		startingBet=startingBet+0;
 	}
 	}
+	//adds the characters ".00" to the end of startingBet if it does not contain a decimal 
+	if(startingBet.includes(".")===false){
+		startingBet=startingBet+".00"
+	}
 	
+	//gameplay loop
 	while (gameMoney >= 1){
 		firstDie = rollDice();
 		secondDie = rollDice();
@@ -61,12 +66,11 @@ function playGame(){
 		
 		
 	}
-	
-	var maxWinningsTwoDecimals = maxWinnings.toFixed(2);
+	//sends values to HTML id's. 
 	document.getElementById("submitButton").innerText = "Play Again!";
     document.getElementById("start").innerHTML = "$"+startingBet;
 	document.getElementById("diceRolls").innerHTML = diceRolls;
-	document.getElementById("maxWinnings").innerHTML = "$"+maxWinningsTwoDecimals;
+	document.getElementById("maxWinnings").innerHTML = "$"+maxWinnings;
 	document.getElementById("rollsAtMax").innerHTML = rollsAtMax;
 	return false;
      
@@ -97,7 +101,7 @@ function validateItems(){
     }
 	
 	/*If "startingBet" is not empty and meets the regex criteria, 
-		the div with id="gameInfo" will display*/
+		the div with id="gameInfo" will display and the playGame() function will run*/
     document.getElementById("gameInfo").style.display="";
  	playGame();
     return false;
