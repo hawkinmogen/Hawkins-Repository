@@ -41,13 +41,27 @@
                           -webkit-border-radius: 0px;
                           -moz-border-radius: 0px;
                             border-radius: 0px;}
-                            
-     
-            
+          
+           table,td{border: 1px solid black;
+                    font-weight:bold;
+                    font-size:125%;
+                    }
+                   
+             /*styling for the dollar sign inside the input box*/ 
+           .dollar{display:inline-block;
+	               position: relative;
+	               }
+        .dollar input{
+	               padding-left:15px;
+	                  }
+        .dollar:before {
+	               position: absolute;
+                  content:"$";
+                 left:10px;
+	               top:7px;
+ 	              }
+                
         </style>
-
-
-
 
 </head>
 
@@ -61,17 +75,14 @@
       <div class="row d-flex justify-content-center" id="startingBetText">
           <h2 class="font-weight-bold">Starting Bet:</h2>
           
+      
       <!--Starting bet form, input is validated using the validateItems(); function in luckySevens.js -->
       <form name="gameStart" onsubmit="return validateItems();" onsubmit="return false;">
           
           <div class="col input-group">
-              
-              <!-- dollar bill icon-->
-              <div class="input-group-addon">
-             <i class="fa fa-dollar"></i> 
-              </div>
-              
-              <input type="number" min="1" step="any" class="form-control" id="startingBet">
+
+              <div class="dollar"> <input type="number" min="1"  step="any" class="form-control" 
+                     id="startingBet" style="font-weight:bold;"> </div>
               </div>
           </div>
               
@@ -79,10 +90,10 @@
                   <button type="submit" id="submitButton" class="btn btn-outline-dark">Play</button>
             </div>
        </form> 
-          
+          </div>
+     
+     
       <!-- Results Section, the following appears when a valid bet is submitted-->
-      
- </div>
       <div class="container">  
 <div id="gameInfo" style="display:none">    
       <hr style="border: 5px solid black;">

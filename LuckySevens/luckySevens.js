@@ -59,10 +59,10 @@ function playGame(){
 			if (gameMoney > maxWinnings){
 				maxWinnings=round(gameMoney,2);
 				rollsAtMax=diceRolls;
-				
 			}
 			console.log("win");
 		}
+		
 		
 		
 	}
@@ -70,7 +70,7 @@ function playGame(){
 	document.getElementById("submitButton").innerText = "Play Again!";
     document.getElementById("start").innerHTML = "$"+startingBet;
 	document.getElementById("diceRolls").innerHTML = diceRolls;
-	document.getElementById("maxWinnings").innerHTML = "$"+maxWinnings;
+	document.getElementById("maxWinnings").innerHTML = "$"+maxWinnings.toFixed(2);
 	document.getElementById("rollsAtMax").innerHTML = rollsAtMax;
 	return false;
      
