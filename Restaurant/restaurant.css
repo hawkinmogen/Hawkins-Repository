@@ -11,7 +11,8 @@ nav a{float:left;
 		padding-left:12px;
 		padding-right:12px;
 		text-decoration: underline;
-		margin-top:15px;}
+		margin-top:15px;
+		font-weight:bold;}
 
 footer{
         margin-left:auto;
