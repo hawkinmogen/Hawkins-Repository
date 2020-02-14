@@ -13,7 +13,7 @@
    <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
-   
+   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet"> <!--jumbotron font-->
    
     <script type="text/JavaScript" src="restaurant.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,6 +25,8 @@
     <link href="restaurant.css" rel="stylesheet" type="text/css" />
   
         <style>
+            
+            .jumbotron{background:transparent}
 			
 			.textForms{margin-top:20px;}
 			
@@ -35,6 +37,11 @@
                                            text-align:right;
                                            float:right;
                                            margin-bottom:15px;}
+            
+             .textForms .row .textFormLabelNotRequired{margin-right:1px;
+                                                       text-align:right;
+                                                       float:right;
+                                                       margin-bottom:15px; }
            
            
            
@@ -57,6 +64,8 @@
                   border-color:black;
                   border-width:2px;}
                   
+           .radioLabels{font-weight:bold}
+                  
             #choice2{margin-left:60px;}
             
             .form-check-inline{margin-right:50px;
@@ -66,7 +75,9 @@
                     border-radius:5px;
                     background-color: lightgrey;
                     border-color: black;
-                    font-size: 20px; }              
+                    font-size: 20px; }   
+                    
+           .notOnPage{text-decoration: underline;}           
             
 		</style>
         
@@ -76,15 +87,15 @@
  <body>
      
      <header> 
-        <div style="background:transparent" class="jumbotron jumbotron-fluid text-center">
+        <div  class="jumbotron jumbotron-fluid text-center">
         <h1 class="display-1">Restaurant Name</h1>
       </div>
     </header>
     
     <nav>
         <div class="row">
-            <p style="margin-left:20px;">  <a href="index.html">Home</a> </p>
-			<p> <a href="menu.html">Menu</a> </p>
+            <p>  <a href="index.html"><span class="notOnPage">Home</span></a> </p>
+			<p> <a href="menu.html"><span class="notOnPage">Menu</span></a> </p>
             <p> <a href="contact.html">Contact Us</a> </p>
             </div>
     </nav>
@@ -103,9 +114,9 @@
              <div class="clear-float"></div>		
 			<label class="textFormLabel" for="phone">Phone:</label> <br>
             <div class="clear-float"></div>		
-			<label style="background-color:white;" class ="textFormLabel" for="reason">Reason for Inquiry:</label> 		
+			<label class ="textFormLabel" for="reason">Reason for Inquiry:</label> 		
 			<div class="clear-float"></div>
-            <label class="textFormLabel" for="info"> Additional Information:</label> <br>
+            <label class="textFormLabelNotRequired" for="info"> Additional Information:</label> <br>
             <div class="clear-float"></div>
             
            </div>		
@@ -124,7 +135,7 @@
 						<option value="other">Other</option>
 					</select><br>
 					
-                    <textarea id="info" name="info"></textarea>
+                    <textarea id="info" name="info" placeholder="(Not Required)"></textarea>
                     
                     
                     </div>
@@ -141,9 +152,9 @@
             <div class="col-7">
                 
                 <input type="radio" id="choice1" name="questionnaire" value="no" checked>
-                <label style="font-weight:bold" for="choice1">No</label>
+                <label class="radioLabels" for="choice1">No</label>
                 <input type="radio" id="choice2" name="questionnaire" value="yes">
-                <label style="font-weight:bold" for="choice2">Yes</label>
+                <label class="radioLabels" for="choice2">Yes</label>
                 </div>
             
            </div>
@@ -189,19 +200,14 @@
                 <input class="submit" type="submit" name="submit" value="Send Request">
            </div>
         
-        
-        
-        
-        
-        
-     </form>
+       
+        </form>
      
      
      
-     
-     <footer>
+      <footer>
         <div class="row">
-           <p style="margin-top:13px;">Street,City,State,Zipcode</p>
+           <p>Street,City,State,Zipcode</p>
         </div>
         
         <div class="row">
@@ -214,17 +220,8 @@
      
      
      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
  </body>
+ </html>
 		
 		
 		
