@@ -7,11 +7,12 @@ nav{
 
 .clear-float{clear:both;}
 
-nav a{float:left;
+nav .nav-item{float:left;
 		padding-left:12px;
 		padding-right:12px;
 		margin-top:15px;
-		margin-left:20px;}
+		margin-left:20px;
+		}
 
 footer{
         margin-left:auto;
@@ -27,8 +28,17 @@ footer p{ max-width:400px;
         margin-right:auto;
 		margin-top:13px;}
 		
-header{font-family: 'Abril Fatface', cursive, 'Times New Roman', Times, serif; }
+.jumbotron{font-family: 'Abril Fatface', cursive, 'Times New Roman', Times, serif; }
+header h2{font-family: 'Coda Caption', sans-serif;
+			text-align:center;}
 
-nav a:visited{color: purple;}
+nav a:visited{color: purple;
+				}
 nav a:hover{font-weight:bold;}
+
+ header{background-color:white;
+                    padding-bottom:1px;}
+footer{background-color:white;}
+  nav{background-color:white;}
+
 

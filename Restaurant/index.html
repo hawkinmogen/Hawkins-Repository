@@ -14,6 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet"> <!--jumbotron font-->
+   <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet"> <!--new location font-->
    
     <script type="text/JavaScript" src="restaurant.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -33,12 +34,12 @@
                              margin-right:auto;
                              margin-top:10px;}
             
-            nav{background-color:white;}
-            header{background-color:white;
-                    padding-bottom:1px;}
-            footer{background-color:white;}
+          
+           
             
             .notOnPage{text-decoration:underline;}
+            
+            #carouselExampleSlidesOnly{margin-top:50px;}
             
         </style>
         
@@ -51,15 +52,24 @@
     <header> 
         <div style="background:transparent" class="jumbotron jumbotron-fluid text-center">
         <h1 class="display-1">Restaurant Name</h1>
-      </div>
+         </div>
+         <div><h2>San Francisco Location Opening Summer of 2020!!!</h2></div>
     </header>
     
     
     <nav>
         <div class="row">
-            <p>  <a href="index.html">Home</a> </p>
-			<p> <a href="menu.html"><span class="notOnPage">Menu</span></a> </p>
-            <p> <a href="contact.html"><span class="notOnPage">Contact Us</span></a> </p>
+            <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link notOnPage" href="menu.html">Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link notOnPage" href="contact.html">Contact Us</a>
+  </li>
+</ul>
             </div>
     </nav>
    
@@ -67,9 +77,32 @@
    <div class="clear-float"></div>
     
         <div class="row">
-            <img src="images/testImage.jpeg" width="400" style="margin-top: 50px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant">
             
-        </div>    
+            <div class="col">
+            </div>
+            
+            <div class="col">
+            <img src="images/testImage.jpeg" width="400" style="margin-top: 50px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant">
+            </div>
+            
+            <div class="col">
+                
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/testImage.jpeg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+    </div>
+  </div>
+</div>
+            
+        </div>   
+        </div> 
         
         
         <div class="row">
