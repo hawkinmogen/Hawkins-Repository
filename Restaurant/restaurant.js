@@ -29,5 +29,8 @@ function validateForms(){
 			return false;
 		}
 	
+	else{
+		alert("Information is valid and has been submitted into the abyss.")
+	}
 	
 }

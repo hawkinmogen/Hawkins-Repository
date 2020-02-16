@@ -60,6 +60,13 @@ footer{background-color:white;}
 			   object-fit:cover;}
 			   
 			   
+.header-banner {position:fixed;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  width:100%;
+  text-align: center;
+}
 
 
 				   
