@@ -22,6 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">   
+       
         <!-- put external or internal style sheets below-->
       
     <link href="restaurant.css" rel="stylesheet" type="text/css" />
@@ -38,7 +39,8 @@
                                            font-weight:bold;
                                            text-align:right;
                                            float:right;
-                                           margin-bottom:15px;}
+                                           margin-bottom:15px;
+                                           font-size:16px;}
             
              .textForms .row .textFormLabelNotRequired{margin-right:1px;
                                                        text-align:right;
@@ -113,8 +115,8 @@
    
    <div class="clear-float"></div>
    
-   
-        <form class="textForms">
+    <div id="error"></div>
+        <form class="textForms" onsubmit="return validateForms();" >
             <div class="row">
             
 			<div class="col-5">
@@ -132,11 +134,11 @@
            </div>		
 					
 					<div class="col-7 ">
-					<input type="text" id="name" name="name"> <br>
+					<input class="textInput" type="text" id="name" name="name"> <br>
             
-     				<input type="text" id="email" name="email"> <br>
+     				<input class="textInput" type="text" id="email" name="email"> <br>
            
-         			<input type="text" id="phone" name="phone"> <br>
+         			<input class="textInput" type="text" id="phone" name="phone"> <br>
            
   					<select id="reason" name="reason">
 						<option value="default" selected>Catering</option>
@@ -153,7 +155,7 @@
 		</div>
         
         <div class="row">
-            <div class="col-5"
+            <div class="col-5">
             <legend><span class="textFormLabel"> Have you been to the restaurant?:</span></legend>
             </div>
             
@@ -180,24 +182,24 @@
                
               <div class="col-7"> 
                <div class="form-check form-check-inline" id="inlineCheckbox1">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <input name="check" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                  <label class="form-check-label" for="inlineCheckbox1">M</label>
                     </div>
                 <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <input name="check" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                 <label class="form-check-label" for="inlineCheckbox2">T</label>
                 </div>
                 <div class="form-check form-check-inline">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                 <input name="check" class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
                 <label class="form-check-label" for="inlineCheckbox3">W</label>
                 </div>
                 <div class="form-check form-check-inline">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Th</label>
+                 <input name="check" class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+                <label class="form-check-label" for="inlineCheckbox4">Th</label>
                 </div>
                 <div class="form-check form-check-inline">
-                 <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">F</label>
+                 <input name="check" class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
+                <label class="form-check-label" for="inlineCheckbox5">F</label>
                 </div>
                
                 </div>
