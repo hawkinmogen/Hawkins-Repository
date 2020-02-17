@@ -1,7 +1,7 @@
 /*
 	Author: Hawkin Mogen
 	Created: 2/11/2020
-	Last Modified:2/12/2020
+	Last Modified:2/16/2020
 	*Javascript for luckySevens.html*
 	*/
 	
@@ -15,6 +15,11 @@ function round(value, precision) {
     var multiplier = Math.pow(10, precision || 0);
     return Math.round(value * multiplier) / multiplier;
 }
+
+function refreshPage()
+  {
+      location.reload();
+  }
 
 
 function playGame(){
@@ -66,13 +71,17 @@ function playGame(){
 		
 		
 	}
-	//sends values to HTML id's. 
-	document.getElementById("submitButton").innerText = "Play Again!";
+	//sends values to HTML id's.
+   
+    document.getElementById("submitButton").innerText = "Play Again!"; //Changes text to play again
+	document.getElementById('submitButton').onclick = refreshPage;  //if "play again" button is clicked, page is refreshed
+	
     document.getElementById("start").innerHTML = "$"+startingBet;
 	document.getElementById("diceRolls").innerHTML = diceRolls;
 	document.getElementById("maxWinnings").innerHTML = "$"+maxWinnings.toFixed(2);
 	document.getElementById("rollsAtMax").innerHTML = rollsAtMax;
 	return false;
+	
      
 }
 
@@ -95,7 +104,7 @@ function validateItems(){
 	
 	/*"startingBet" is compared against the regex to ensure it meets the criteria*/
 	if(regex.test(startingBet) == false){
-   alert("Input must follow the format: (dollars).(cents) ###.##");
+   alert("Input Invalid. Enter only two numbers after the decimal point.");
    document.getElementById("startingBet").focus();
    return false;
     }

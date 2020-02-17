@@ -6,17 +6,17 @@ function validateForms(){
     var check = document.getElementsByClassName("form-check-input");
 	
 	if (nameTextInput ==='' || nameTextInput == null){
-		alert("Name field is require.");
+		alert("Name field is required.");
 		return false;
 	}
 	
 	if (emailTextInput ==='' || emailTextInput == null){
-		alert("Email field is require.");
+		alert("Email field is required.");
 		return false;
 	}
 		
 		if (phoneTextInput ==='' || phoneTextInput == null){
-		alert("Phone field is require.");
+		alert("Phone field is required.");
 		return false;
 	}
 	

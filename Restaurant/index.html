@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
     Author: Hawkin Mogen
-    Created: 2/12/2020
-    Last Modified:
+    Created: 2/13/2020
+    Last Modified:2/16/2020
  -->
 <html lang="en">
 <html>
@@ -11,7 +11,7 @@
     <title> Home Page </title>
    
    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet"> <!--jumbotron font-->
@@ -42,8 +42,8 @@
             
           
            
-            
-            .notOnPage{text-decoration:underline;}
+            /* Underlines the links which are not active*/
+            .notOnPage{text-decoration:underline;} 
             
             .carousel-caption{font-weight:bold;}
             
@@ -64,12 +64,16 @@
 </head>
 
 <body>
+  
+  <!--Createst permanent banner at top of page if javascript is disabled-->
   <noscript>
   <div class="header-banner">This site is best viewed with JavaScript enabled.</div>
     </noscript>
+   
+   
     <header> 
         <div style="background:transparent" class="jumbotron jumbotron-fluid text-center">
-        <h1 class="display-1">Restaurant Name</h1>
+        <h1 class="display-1">Viva Lasagna</h1>
          </div>
          <div><h2>San Francisco Location Opening Summer of 2020!!!</h2></div>
     </header>
@@ -79,16 +83,16 @@
         <div class="row">
             <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" href="index.html">Home <i class='fas fa-home'></i> </a>
+    <a class="nav-link active" href="index.html">Home <i class='fas fa-home' alt="Click here for the home page"></i> </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link notOnPage" href="menu.html">Menu</a>
+    <a class="nav-link notOnPage" href="menu.html" alt="click here for the menu">Menu</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link notOnPage" href="contact.html">Contact Us</a>
+    <a class="nav-link notOnPage" href="contact.html" alt="click here for the contact page">Contact Us</a>
   </li>
 </ul>
-            </div>
+         </div>
     </nav>
    
    
@@ -102,11 +106,17 @@
             </div>
             
             <div class="col">
-            <img src="images/testImage.jpeg" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant"><br>
-             <p class="restaurant-text">Restaurant Description<br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet sagittis bibendum. Nunc accumsan eros arcu, ac interdum ante interdum nec. Nunc leo massa, imperdiet dignissim nunc vel, vehicula aliquam massa. Integer nec neque sed lacus tempus mattis tincidunt nec massa. Mauris euismod dapibus quam id pretium. Vivamus elementum pharetra accumsan. Aenean gravida aliquet ex eu dignissim.</p>
+            <img src="images/restaurant.jpeg" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant"><br>
+             <p class="restaurant-text">~Viva Lasagna, a Taste of Home~<br>
+              At Viva Lasagna, we've always done things our own way, the right way. From its inception, Viva Lasagna has set the bar for mid-tier, family restaurants.
+              We use only the highest quality, local ingredients. That is unless the vendors at the farmer's market are giving us a hard time. Hawkin Mogen founded the restaurant under the belief that food should be simple.
+              Our fearless leader started it all with our first dish, the ~Burger and Fries~. We have since branched out and added such delicacies as ~Hot Dog and Chips~. Just writing this makes me want whip up a plate and wash it down with one of our hand-pressed lemonades.
+              We do hope you enjoy your experience here and remember: ~Viva la Vida, Viva Lasagna!~ &trade;</p>
             </div>
             <div class="col">
+        
+        
+        <!-- code for carousel-->
         <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
@@ -149,50 +159,13 @@
         
         
        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <footer>
+   <footer>
         <div class="row">
-           <p>Street,City,State,Zipcode</p>
+           <p>P Sherman 42 Wallaby Way, Milwaukee, Wisconsin, 53202</p>
         </div>
         
         <div class="row">
-            <p>Telephone Number</p>
+            <p>(123)-456-7890</p>
         </div>
        
         
