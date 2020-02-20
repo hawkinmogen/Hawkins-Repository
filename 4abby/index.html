@@ -49,8 +49,32 @@ border-right-style: double;
 border-right-color: #A54E8E;
 border-radius: 40px;
 margin-bottom:30px;}
-        
-        
+
+
+      
+      #demo img{height:300px;
+                margin-left:25%;
+                margin-right:25%;
+                }
+     .carousel-control-prev{margin-left:auto;}
+     .carousel-control-next{margin-right:auto;}   
+     
+     
+     
+     .navRow{border-top-width: 11px;
+              border-top-style: inset;
+              border-top-color: #A54E8E;
+              border-bottom-width: 11px;
+              border-bottom-style: outset;
+              border-bottom-color: #A54E8E;
+              margin-bottom:20px;}
+              
+      .nav-link{
+           margin-top:10px;
+           margin-bottom: 10px;
+         }
+           
+     
          </style>
         
         
@@ -78,7 +102,15 @@ margin-bottom:30px;}
      </div>     
     
  </header>
-
+ 
+ <div class="row navRow">
+ <nav>
+   
+  <a class="nav-link" href="index.html">Home </a>
+  </li>
+       
+    </nav>
+</div>
 
 
 
@@ -86,15 +118,16 @@ margin-bottom:30px;}
  <div class="row">
             
             <div class="col">
-            </div>
-            
-            <div class="col">
-            <img src="images/restaurant.jpeg" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant"><br>
-             <p class="restaurant-text">~Viva Lasagna, a Taste of Home~<br>
+                 <p class="restaurant-text">~Viva Lasagna, a Taste of Home~<br>
               At Viva Lasagna, we've always done things our own way, the right way. From its inception, Viva Lasagna has set the bar for mid-tier, family restaurants.
               We use only the highest quality, local ingredients. That is unless the vendors at the farmer's market are giving us a hard time. Hawkin Mogen founded the restaurant under the belief that food should be simple.
               Our fearless leader started it all with our first dish, the ~Burger and Fries~. We have since branched out and added such delicacies as ~Hot Dog and Chips~. Just writing this makes me want whip up a plate and wash it down with one of our hand-pressed lemonades.
               We do hope you enjoy your experience here and remember: ~Viva la Vida, Viva Lasagna!~ &trade;</p>
+            </div>
+            
+            <div class="col">
+            <img src="images/restaurant.jpeg" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant"><br>
+            
             </div>
 
 </div>
@@ -102,7 +135,48 @@ margin-bottom:30px;}
 
 <div class="row">
     
-    <img src="images/restaurant.jpeg" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant"><br>
+    <div class="col">
+     <!-- code for carousel-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+  
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="carouselImage" src="images/sanfran.jpg" alt="Image of new restaurant">
+
+    </div>
+    <div class="carousel-item">
+      <img class="carouselImage" src="images/menu.jpg" alt="Image of new menu">
+
+    </div>
+    <div class="carousel-item">
+      <img class="carouselImage" src="images/drink.jpg" alt="Image of SG special brew">
+  
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+    </div>
+    
+    <div class="col">
+        
+         <p class="restaurant-text">~Viva Lasagna, a Taste of Home~<br>
+              At Viva Lasagna, we've always done things our own way, the right way. From its inception, Viva Lasagna has set the bar for mid-tier, family restaurants.
+              We use only the highest quality, local ingredients. That is unless the vendors at the farmer's market are giving us a hard time. Hawkin Mogen founded the restaurant under the belief that food should be simple.
+              Our fearless leader started it all with our first dish, the ~Burger and Fries~. We have since branched out and added such delicacies as ~Hot Dog and Chips~. Just writing this makes me want whip up a plate and wash it down with one of our hand-pressed lemonades.
+              We do hope you enjoy your experience here and remember: ~Viva la Vida, Viva Lasagna!~ &trade;</p>
+        
+    </div>    
+
 </div>
 
 
