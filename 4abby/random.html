@@ -31,13 +31,21 @@
     <link href="abby.css" rel="stylesheet" type="text/css" />
   
         <style>
-       #main{ border-width: 12px;
+       #memory{ border-width: 12px;
             border-style: ridge;
             border-color: #A54E8E;
             border-radius: 0px 40px 0px 40px;
             margin-left:1px;
             margin-right:1px;
-            }
+            margin-bottom:60px;}
+            
+             #favorite{ border-width: 12px;
+            border-style: ridge;
+            border-color: #A54E8E;
+            border-radius: 0px 40px 0px 40px;
+            margin-left:1px;
+            margin-right:1px;
+            margin-bottom:60px;}
             
        header{border-left-width: 12px;
 border-left-style: double;
@@ -50,15 +58,6 @@ border-right-color: #A54E8E;
 border-radius: 40px;
 margin-bottom:30px;}
 
-
-      
-      #demo img{height:300px;
-                margin-left:25%;
-                margin-right:25%;
-                }
-     .carousel-control-prev{margin-left:auto;}
-     .carousel-control-next{margin-right:auto;}   
-     
      
      
      .navRow{border-top-width: 11px;
@@ -73,7 +72,20 @@ margin-bottom:30px;}
            margin-top:10px;
            margin-bottom: 10px;
          }
+           .btn{margin:auto;}
            
+           #randomMemory{
+                         margin:auto;}
+                         
+          #randomFavorite{margin:auto;}
+          
+          .btn-danger{margin-bottom:20px;}
+          
+          #finalForm{margin:auto;
+                     border: 5px solid black;
+                     font-weight: bold;}
+          
+          #finalSubmit{margin-left: 47%;}
      
          </style>
         
@@ -113,75 +125,108 @@ margin-bottom:30px;}
     </nav>
 </div>
 
-
-
-<div  id="main">
- <div class="row">
-            
-            <div class="col">
-                 <p class="restaurant-text">~Viva Lasagna, a Taste of Home~<br>
-              At Viva Lasagna, we've always done things our own way, the right way. From its inception, Viva Lasagna has set the bar for mid-tier, family restaurants.
-              We use only the highest quality, local ingredients. That is unless the vendors at the farmer's market are giving us a hard time. Hawkin Mogen founded the restaurant under the belief that food should be simple.
-              Our fearless leader started it all with our first dish, the ~Burger and Fries~. We have since branched out and added such delicacies as ~Hot Dog and Chips~. Just writing this makes me want whip up a plate and wash it down with one of our hand-pressed lemonades.
-              We do hope you enjoy your experience here and remember: ~Viva la Vida, Viva Lasagna!~ &trade;</p>
-            </div>
-            
-            <div class="col">
-            <img src="images/restaurant.jpeg" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto;" class="img-fluid" alt="Picutre of the restaurant"><br>
-            
-            </div>
-
-</div>
-
-
-<div class="row">
+<div class="main">
     
-    <div class="col">
-     <!-- code for carousel-->
-        <div id="demo" class="carousel slide" data-ride="carousel">
-  
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="carouselImage" src="images/sanfran.jpg" alt="Image of new restaurant">
-
-    </div>
-    <div class="carousel-item">
-      <img class="carouselImage" src="images/menu.jpg" alt="Image of new menu">
-
-    </div>
-    <div class="carousel-item">
-      <img class="carouselImage" src="images/drink.jpg" alt="Image of SG special brew">
-  
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
+    <div class="row">
+    <div class="col" id="memory">
+    <div class="row">
+        
+     <button type="submit" onclick="return randomMemoryGenerator();" id="memorySubmit" class="btn btn-outline-dark">~Favorite Memory~</button>
+     
+     </div>   
+    
+    <div class="row">
+        
+      <div id="randomMemory" style="display:none">
+          
+      
+         </div>  
+     
+     </div>   
     </div>
     
-    <div class="col">
+    <div class="col" id="favorite">
         
-         <p class="restaurant-text">~Viva Lasagna, a Taste of Home~<br>
-              At Viva Lasagna, we've always done things our own way, the right way. From its inception, Viva Lasagna has set the bar for mid-tier, family restaurants.
-              We use only the highest quality, local ingredients. That is unless the vendors at the farmer's market are giving us a hard time. Hawkin Mogen founded the restaurant under the belief that food should be simple.
-              Our fearless leader started it all with our first dish, the ~Burger and Fries~. We have since branched out and added such delicacies as ~Hot Dog and Chips~. Just writing this makes me want whip up a plate and wash it down with one of our hand-pressed lemonades.
-              We do hope you enjoy your experience here and remember: ~Viva la Vida, Viva Lasagna!~ &trade;</p>
+      <div class="row">
         
-    </div>    
+     <button type="submit" onclick="return randomFavoriteGenerator();" id="memorySubmit" class="btn btn-outline-dark">~What I Love About You~</button>
+     
+     </div>   
+    
+    <div class="row">
+        
+      <div id="randomFavorite" style="display:none">
+          
+       <p>  qqqq</p>
+         </div>  
+     
+     </div>  
+        
+        </div>
+    
+    </div>
+    
+    <div class="row">
+      
+      <button type="submit" onclick="return doNotClick1();" class="btn btn-danger">***DO NOT CLICK***</button> <br>
+      
+    </div>
+    
+    <div class="row">
+      
+      <button style="display:none" id="doNotClick2" type="submit" onclick="return doNotClick2();"  class="btn btn-danger">***SERIOUSLY, DO NOT CLICK***</button> <br>
+      
+    </div>
+    
+     <div class="row">
+      
+      <button style="display:none" id="doNotClick3" type="submit" onclick="return doNotClick3();"  class="btn btn-danger">no clicky</button> <br>
+      
+    </div>
+    
+    <div class="row">
+      
+      <button style="display:none" id="doNotClick4" type="submit" onclick="return doNotClick4();"  class="btn btn-danger">***LAST CHANCE***</button> <br>
+      
+    </div>
+    
+    <div class="row" style="display:none" id="final">
+      <form id="finalForm" >
+     <p> I, <input type="text" placeholder="Insert Name Here">, under sound mind and body, acknowledge that I am choosing to click the "Submit" button below, despite not knowing what lies ahead.<br>
+     Upon clicking the "Submit" button, I waive any related legal protections which may be afforded to me. </p>
+     <button id="finalSubmit" type="submit" onclick="return reveal();"  class="btn btn-danger">Submit</button> 
+      
+      </form>
+    </div>
+    
+    <div class="row">
+      
+           <img src="images/restaurant.jpeg" id="secretPic" width="400" style="margin-top: 30px; margin-left: auto; margin-right:auto; display:none;" class="img-fluid" alt="Picutre of the restaurant">
+      
+    </div>
+    
+ </div>   
 
-</div>
 
 
-</div>
- 
-    </body>
-    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
