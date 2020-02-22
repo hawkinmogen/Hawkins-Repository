@@ -47,6 +47,17 @@
             margin-right:1px;
             margin-bottom:60px;}
             
+       #bad{border-width: 12px;
+            border-style: ridge;
+            border-color: #A54E8E;
+            border-radius: 0px 40px 0px 40px;
+           margin:auto;
+            margin-bottom:60px;}
+            
+            #badThing{margin-right:50px;
+                      margin-top:10px;
+                      font-weight: bold;}
+            
        header{border-left-width: 12px;
 border-left-style: double;
 border-left-color: #A54E8E;
@@ -99,7 +110,7 @@ margin-bottom:30px;}
     
     <div class="row">
     <div class="col">
-        <img src="images/sanfran.jpg" width="400" class="img-fluid">
+        <img src="images/headerImage2.jpg" width="400" class="img-fluid">
         
     </div>    
     
@@ -157,7 +168,7 @@ margin-bottom:30px;}
         
       <div id="randomFavorite" style="display:none">
           
-       <p>  qqqq</p>
+       
          </div>  
      
      </div>  
@@ -165,6 +176,27 @@ margin-bottom:30px;}
         </div>
     
     </div>
+    
+    
+    <div class="container" id="bad">
+      
+      
+        <div class="row" id="badButton">
+     <button type="submit" onclick="return revealBad();" id="badSubmit" class="btn btn-outline-dark">~Everything I Don't Like About You~</button><br>
+     </div>
+     
+   <div class="container" id="badThing" style="display:none">
+    <div class="row">
+    <p style="margin:auto;">When you yelled at Elvis :(</p>
+    </div>
+    
+    <div class="row">
+    <img style="margin:auto;" src="images/carouselImage1.jpg" width="400" class="img-fluid">
+   </div>
+    
+    </div> 
+        
+   </div>
     
     <div class="row">
       

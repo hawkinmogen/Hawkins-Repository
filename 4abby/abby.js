@@ -48,3 +48,10 @@ function doNotClick4(){document.getElementById("final").style.display="";}
 
 function reveal(){document.getElementById("secretPic").style.display="";
 					return false;}
+					
+					
+function revealBad(){
+	document.getElementById("badThing").style.display="";
+}
+
+
